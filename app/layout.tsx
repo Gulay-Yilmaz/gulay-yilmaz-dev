@@ -18,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body
         className={
           montserrat.className + " bg-line-gradient-bg bg-no-repeat bg-fixed"

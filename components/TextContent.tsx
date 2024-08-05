@@ -10,35 +10,37 @@ type TextContentProps = {
 };
 
 const TextContent = ({ content, tag, customClass }: TextContentProps) => {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.03,
+      },
+    },
+  };
+
+  const letterVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const AnimatedText = (
+    <motion.span
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      className="inline-block"
+    >
+      {Array.from(content).map((letter, index) => (
+        <motion.span key={index} variants={letterVariants}>
+          {letter}
+        </motion.span>
+      ))}
+    </motion.span>
+  );
+
   const renderContent = () => {
-    const letters = content.split("");
-
-    const variants = {
-      hidden: { opacity: 0, scale: 0 },
-      visible: (i: number) => ({
-        opacity: 1,
-        scale: 1,
-        transition: {
-          delay: i * 0.035, // Adjust delay to control speed
-          duration: 0.5,
-          ease: "easeInOut",
-        },
-      }),
-    };
-
-    const AnimatedText = letters.map((letter, index) => (
-      <motion.span
-        key={index}
-        className="inline-block mr-1"
-        custom={index}
-        initial="hidden"
-        whileInView="visible"
-        variants={variants}
-      >
-        {letter}
-      </motion.span>
-    ));
-
     switch (tag) {
       case "h1":
         return (
@@ -84,7 +86,7 @@ const TextContent = ({ content, tag, customClass }: TextContentProps) => {
   };
 
   return (
-    <div className={clsx("w-[70%] lg:w-1/2 py-24 px-6 xl:px-0 ", customClass)}>
+    <div className={clsx("w-[70%] lg:w-1/2 py-24 px-6 xl:px-0", customClass)}>
       {renderContent()}
     </div>
   );

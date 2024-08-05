@@ -16,6 +16,9 @@ const config: Config = {
         "header-bg":
           "linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0))",
       },
+      colors: {
+        "primary-100": "#1B293F",
+      },
     },
   },
   plugins: [],
