@@ -1,9 +1,10 @@
 export const header = {
   title: "Gülay Yılmaz",
-  link: "/",
+  link: "/#home",
   navList: [
-    { link: "/about", title: "About" },
-    { link: "/projects", title: "Projects" },
-    { link: "/contact", title: "Contact" },
+    { link: "/#about", title: "About" },
+    { link: "/#projects", title: "Projects" },
+    { link: "/#skills", title: "Skills" },
+    { link: "/#contact", title: "Contact" },
   ],
 };

@@ -41,7 +41,7 @@ export default function LaptopCanvas({ cards }: { cards: ICard[] }) {
                   <Card
                     key={index}
                     card={card}
-                    handleClick={() => setSelectedProject(card.title)}
+                    // handleClick={() => setSelectedProject(card.title)}
                   />
                 ))}
               </div>

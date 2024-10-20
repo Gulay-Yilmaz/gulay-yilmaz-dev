@@ -3,21 +3,18 @@ import React from "react";
 import { ICard } from "./interface";
 import Image from "next/image";
 import clsx from "clsx";
-import { is } from "@react-three/fiber/dist/declarations/src/core/utils";
 
 type CardProps = {
   card: ICard;
-  handleClick: () => void;
 };
 
-const Card = ({ card, handleClick }: CardProps) => {
+const Card = ({ card }: CardProps) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
     <div
-      onClick={handleClick}
       className={clsx(
-        "w-auto h-auto flex flex-col gap-8 p-3 border border-white",
+        "w-[360px] h-[380px] flex flex-col gap-8 p-4 border border-white rounded",
         {
           "bg-white": isHovered,
           "bg-transparent": !isHovered,
@@ -31,8 +28,8 @@ const Card = ({ card, handleClick }: CardProps) => {
           src={card.image.src}
           alt={card.image.alt}
           width={card.image.width}
-          height={card.image.height}
-          className="w-full h-[200px] object-cover"
+          height={150}
+          className="w-full h-[150px] object-cover"
         />
       )}
 
@@ -40,15 +37,15 @@ const Card = ({ card, handleClick }: CardProps) => {
         <h1
           className={clsx("text-2xl font-bold", {
             "text-white": !isHovered,
-            "text-primary-100": isHovered,
+            "text-gray-scale-900": isHovered,
           })}
         >
           {card.title}
         </h1>
         <p
           className={clsx("text-base", {
-            "text-white line-clamp-3": !isHovered,
-            "text-primary-100": isHovered,
+            "text-white line-clamp-2": !isHovered,
+            "text-gray-scale-900": isHovered,
           })}
         >
           {card.description}
@@ -58,7 +55,7 @@ const Card = ({ card, handleClick }: CardProps) => {
         {card.technologies.map((tecnology, index) => (
           <div
             key={index}
-            className={clsx("w-8 h-8 p-2 bg-white", {
+            className={clsx("w-8 h-8 p-2 rounded bg-white", {
               "bg-white": !isHovered,
               "bg-transparent": isHovered,
             })}

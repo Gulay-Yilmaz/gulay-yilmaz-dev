@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { header } from "@/mocks/header";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,11 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body
-        className={
-          montserrat.className + " bg-line-gradient-bg bg-no-repeat bg-fixed"
-        }
-      >
+      <body className={inter.className + " bg-gray-scale-900"}>
         <Header header={header} />
         {children}
       </body>

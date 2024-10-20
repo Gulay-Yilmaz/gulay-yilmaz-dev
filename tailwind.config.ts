@@ -15,9 +15,16 @@ const config: Config = {
         "line-gradient-bg": "linear-gradient(to bottom, #000, #1b293f, #000)",
         "header-bg":
           "linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0))",
+        "linear-bubble-bg":
+          "linear-gradient(62deg, rgb(46, 63, 213) 40%, rgb(37, 75, 170) 64%)",
       },
       colors: {
-        "primary-100": "#1B293F",
+        "primary-light": "#82A2E6",
+        "primary-mid": "#20A5FD",
+        "primary-dark": "#0028B8",
+        "gray-scale-900": "#2F3442",
+        "gray-scale-800": "#353A45",
+        "gray-scale-500": "#898E98",
       },
     },
   },

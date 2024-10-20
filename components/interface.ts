@@ -26,3 +26,11 @@ export interface ISocialItem {
   icon: keyof typeof ReactIcons;
   text: string;
 }
+
+export interface IButton {
+  text: string;
+  link: string;
+  icon?: keyof typeof ReactIcons;
+  variant: "fill" | "outline";
+  onClick?: () => void;
+}
