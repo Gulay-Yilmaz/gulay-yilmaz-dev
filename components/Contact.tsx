@@ -15,9 +15,9 @@ const Contact = ({ socialLinks }: { socialLinks: SocialLink[] }) => {
       <div className="text-left mb-16 flex flex-col gap-4">
         <h2 className="text-2xl md:text-3xl font-bold">Contact Me</h2>
         <p className="text-base max-w-3xl mx-auto">
-          If you're interested in collaborating or have any questions regarding
-          job opportunities, please don't hesitate to reach out. I look forward
-          to connecting!
+          If you&apos;re interested in collaborating or have any questions
+          regarding job opportunities, please don&apos;t hesitate to reach out.
+          I look forward to connecting!
         </p>
 
         <Link
