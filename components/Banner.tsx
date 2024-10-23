@@ -56,8 +56,8 @@ const AnimatedBubbles = () => {
       ))}
       <div className="relative z-10 flex flex-col items-center justify-center h-[720px] md:h-[600px] text-center text-white">
         <h1 className="text-lg text-blue-400">Software Developer</h1>
-        <h2 className="text-4xl font-bold mb-4">Gülay YILMAZ</h2>
-        <p className="mb-6">
+        <h2 className="text-4xl font-bold mb-4 text-white">Gülay YILMAZ</h2>
+        <p className="mb-6 text-white">
           Let&apos;s develop your next successful product together!
         </p>
         <div className="flex flex-wrap gap-4 justify-center items-center">

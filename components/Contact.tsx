@@ -12,9 +12,9 @@ const Contact = ({ socialLinks }: { socialLinks: SocialLink[] }) => {
       id="contact"
       className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-6 py-16 lg:p-16 rounded bg-gray-scale-800"
     >
-      <div className="text-left mb-16 flex flex-col gap-4">
+      <div className="text-left mb-16 flex flex-col gap-4 text-white">
         <h2 className="text-2xl md:text-3xl font-bold">Contact Me</h2>
-        <p className="text-base max-w-3xl mx-auto">
+        <p className="text-base max-w-3xl mx-auto text-white">
           If you&apos;re interested in collaborating or have any questions
           regarding job opportunities, please don&apos;t hesitate to reach out.
           I look forward to connecting!

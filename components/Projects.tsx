@@ -16,8 +16,8 @@ const Projects = ({ cards }: { cards: ICard[] }) => {
       className="grid grid-cols-1 md:md:grid-cols-2 gap-8 md:gap-16 px-6 xl:px-0 py-16"
     >
       <div className="text-left mb-16 flex flex-col gap-4">
-        <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
-        <p className="text-base max-w-3xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-white">Projects</h2>
+        <p className="text-base max-w-3xl mx-auto text-white">
           Explore a selection of my personal and professional projects that
           showcase my expertise in frontend development and creative
           problem-solving. My personal projects reflect my passion for

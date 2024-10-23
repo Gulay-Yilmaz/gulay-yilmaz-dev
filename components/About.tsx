@@ -29,14 +29,16 @@ const AboutMe: React.FC<AboutMeProps> = ({
 }) => {
   return (
     <div
-      className="bg-gray-scale-800 px-6 py-16 lg:p-16 text-white rounded-lg shadow-md max-w-7xl mx-auto"
+      className="bg-gray-scale-800 px-6 py-16 lg:p-16 rounded-lg shadow-md max-w-7xl mx-auto"
       id="about"
     >
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">{title}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+        {title}
+      </h2>
       <div className="flex flex-col-reverse md:grid  md:grid-cols-3 gap-6">
         {/* Sol: Metin içeriği */}
         <div className="md:col-span-2">
-          <Markdown className="prose prose-lg prose-blue">
+          <Markdown className="prose prose-lg prose-blue text-white">
             {markdownContent}
           </Markdown>
         </div>
@@ -55,7 +57,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
           </div>
 
           {/* İsim ve Pozisyon */}
-          <h2 className="text-xl font-semibold">{name}</h2>
+          <h2 className="text-xl font-semibold text-white">{name}</h2>
           <p className="text-primary-mid">{position}</p>
 
           {/* Sosyal Medya İkonları */}

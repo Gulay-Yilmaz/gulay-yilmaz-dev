@@ -12,10 +12,10 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <div className="text-white py-16 " id="skills">
+    <div className="py-16 " id="skills">
       <div className="text-center mb-16 flex flex-col gap-4 px-6 xl:px-0">
-        <h2 className="text-2xl md:text-3xl font-bold">Skills</h2>
-        <p className="text-base max-w-3xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-white">Skills</h2>
+        <p className="text-base max-w-3xl mx-auto text-white">
           I specialize in frontend development with expertise in Next.js, React,
           and TypeScript, complemented by a strong foundation in Tailwind CSS,
           Vue, and more.
