@@ -51,7 +51,9 @@ const AnimatedBubbles = () => {
           }}
         >
           <div className="absolute w-full h-full bg-linear-bubble-bg blur-2xl"></div>
-          <div className="relative w-6 h-6 text-gray-scale-500">{icon}</div>
+          <div className="relative w-6 md:w-12 h-6 md:h-12 text-gray-scale-500">
+            {icon}
+          </div>
         </div>
       ))}
       <div className="relative z-10 flex flex-col items-center justify-center h-[720px] md:h-[600px] text-center text-white">
