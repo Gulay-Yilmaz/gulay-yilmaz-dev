@@ -148,4 +148,36 @@ export const projects: ICard[] = [
       },
     ],
   },
+  {
+    title: "RMK Merrill",
+    description:
+      "RMK Merrill project is a corporate website consisting of cms and frontend. I worked as PM/PO and frontend developer in this project. Nextjs and Strapi CMS were used in the project.",
+    image: {
+      src: GulayYilmazImg,
+      alt: "RMK Merrill",
+      width: 630,
+      height: 630,
+    },
+    technologies: [
+      {
+        src: Nextjs,
+        alt: "Next.js",
+        width: 100,
+        height: 100,
+      },
+      {
+        src: Tailwind,
+        alt: "Tailwind",
+        width: 100,
+        height: 100,
+      },
+      {
+        src: TypeScript,
+        alt: "TypeScript",
+        width: 100,
+        height: 100,
+      },
+      { src: Strapi, alt: "Strapi", width: 100, height: 100 },
+    ],
+  },
 ];
